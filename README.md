@@ -14,9 +14,9 @@ Edit `config.php` to update the version, release date, release count, latest-cha
 
 The installation guide describes the installer distribution. Update the guide if the configured download changes to a different format. The app's installed version checks for updates using its own update service; the website does not provide that service.
 
-## Maintenance mode
+## Development mode
 
-The site currently displays a maintenance page for every public page. Set `maintenance_mode` to `false` in `config.php` to make the dashboard, installation guide, changelog and download page available again.
+The site currently displays a development page for every public page. Set `maintenance_mode` to `false` in `config.php` to make the dashboard, installation guide, changelog and download page available.
 
 ## Structure
 
