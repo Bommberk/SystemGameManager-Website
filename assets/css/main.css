@@ -55,14 +55,17 @@ h1 { margin-bottom: 22px; font-size: clamp(2.7rem, 5vw, 4.5rem); letter-spacing:
 .preview-heading h2 { margin: 0; font-size: 1.4rem; }
 .preview-kicker { margin-bottom: 5px; color: var(--muted); font-size: .65rem; letter-spacing: .1em; }
 .preview-label { color: var(--accent-light); font-size: .75rem; }
-.preview-search { margin: 22px 0 12px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; color: var(--muted); }
+.preview-section-title { margin: 22px 0 10px; font-size: .85rem; }
+.preview-launchers { display: flex; flex-wrap: wrap; gap: 8px; }
+.preview-launchers span { padding: 9px 12px; border-radius: 8px; background: var(--surface); font-size: .72rem; }
+.preview-audio { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 14px; border-radius: 10px; background: var(--surface); }
+.preview-audio strong, .preview-audio span { display: block; font-size: .72rem; }
+.preview-audio > div + div { border-left: 1px solid var(--border); padding-left: 14px; }
+.preview-audio > div + div span { margin-top: 8px; color: var(--muted); }
+.preview-search { margin: 8px 0 0; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; color: var(--muted); }
 .preview-search span { margin-left: 8px; font-size: .78rem; }
-.preview-item { display: flex; align-items: center; gap: 13px; margin-top: 9px; padding: 12px; border-radius: 10px; background: var(--surface); }
-.preview-icon, .feature-icon { display: inline-grid; place-items: center; flex: 0 0 auto; width: 42px; height: 42px; border-radius: 8px; background: var(--nav); color: var(--accent-light); font-size: 1.3rem; }
-.preview-item strong, .preview-item small { display: block; }
-.preview-item strong { font-size: .85rem; }
-.preview-item small { color: var(--muted); font-size: .72rem; }
-.preview-arrow { margin-left: auto; color: var(--muted); font-size: 1.4rem; }
+.preview-caption { margin: 14px 0 0; color: var(--muted); font-size: .7rem; }
+.feature-icon { display: inline-grid; place-items: center; flex: 0 0 auto; width: 42px; height: 42px; border-radius: 8px; background: var(--nav); color: var(--accent-light); font-size: 1.3rem; }
 .info-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; padding: 22px 26px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); box-shadow: 0 5px 10px #0003; }
 .info-strip div + div { border-left: 1px solid var(--border); padding-left: 24px; }
 .info-strip span, .info-strip strong { display: block; }

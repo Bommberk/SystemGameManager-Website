@@ -10,7 +10,7 @@ For local development, run `php -S localhost:8000` from the project directory an
 
 ## Download and release configuration
 
-Edit `config.php` to update the version, release date, release count and download URL. Upload the Windows installer to your server and set `download_url` to its URL, for example `/downloads/SystemGameManager-win-Setup.exe` or an HTTPS URL. Until a URL is configured, download controls are visibly disabled instead of linking to a missing file. All download controls use this one setting. Update the release details and dashboard's latest-change summary when publishing a new version; nothing is fetched automatically.
+Edit `config.php` to update the version, release date, release count, latest-change summary and download URL. Upload the Windows installer to your server and set `download_url` to its URL, for example `/downloads/SystemGameManager-win-Setup.exe` or an HTTPS URL. Until a URL is configured, download controls are visibly disabled instead of linking to a missing file. All download controls use this one setting. Update the release details and dashboard's latest-change summary when publishing a new version; nothing is fetched automatically.
 
 The installation guide describes the installer distribution. Update the guide if the configured download changes to a different format. The app's installed version checks for updates using its own update service; the website does not provide that service.
 

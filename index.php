@@ -18,11 +18,12 @@ require __DIR__ . '/header.php';
     <div class="app-preview" aria-label="Overview of SystemGameManager features">
         <div class="preview-top"><span class="preview-title"><span class="status-dot"></span> SYSTEM GAME MANAGER</span><span class="window-dots" aria-hidden="true">● ● ●</span></div>
         <div class="preview-body">
-            <div class="preview-heading"><div><p class="preview-kicker">YOUR SPACE</p><h2>Game Manager</h2></div><span class="preview-label">Library</span></div>
-            <div class="preview-search">⌕ <span>Search your games</span></div>
-            <div class="preview-item"><span class="preview-icon">▦</span><div><strong>Game library</strong><small>Browse and manage your games</small></div><span class="preview-arrow">›</span></div>
-            <div class="preview-item"><span class="preview-icon">♫</span><div><strong>Audio settings</strong><small>Make your setup yours</small></div><span class="preview-arrow">›</span></div>
-            <div class="preview-item"><span class="preview-icon">⌘</span><div><strong>Hotkeys</strong><small>Keep controls close at hand</small></div><span class="preview-arrow">›</span></div>
+            <div class="preview-heading"><div><p class="preview-kicker">SYSTEM &amp; GAME MANAGER</p><h2>Game Manager</h2></div><span class="preview-label">Overview</span></div>
+            <h3 class="preview-section-title">Launchers</h3>
+            <div class="preview-launchers"><span>Steam</span><span>Epic Games</span><span>GOG Galaxy</span></div>
+            <h3 class="preview-section-title">Audio settings</h3>
+            <div class="preview-audio"><div><strong>Select games</strong><div class="preview-search">⌕ <span>Search your games</span></div></div><div><strong>Audio output</strong><span>Music volume</span><span>Game volume</span></div></div>
+            <p class="preview-caption">Illustration of the Game Manager</p>
         </div>
     </div>
 </section>
@@ -44,7 +45,7 @@ require __DIR__ . '/header.php';
 </section>
 
 <section class="section bottom-grid">
-    <article class="card change-card"><div><p class="eyebrow">LATEST CHANGES</p><h2>What's new in v<?= escape($config['version']) ?></h2><p>Window position is restored, and starting with Windows can be configured independently of background running.</p></div><a class="text-link" href="changelog/">View changelog <span aria-hidden="true">→</span></a></article>
+    <article class="card change-card"><div><p class="eyebrow">LATEST CHANGES</p><h2>What's new in v<?= escape($config['version']) ?></h2><p><?= escape($config['latest_changes']) ?></p></div><a class="text-link" href="changelog/">View changelog <span aria-hidden="true">→</span></a></article>
     <article class="card requirements-card"><p class="eyebrow">BEFORE YOU START</p><h2>System requirements</h2><ul><li>Windows 10 or 11</li><li>Microsoft Edge WebView2 Runtime</li></ul><a class="text-link" href="installation/">See installation guide <span aria-hidden="true">→</span></a></article>
 </section>
 <?php require __DIR__ . '/footer.php'; ?>
