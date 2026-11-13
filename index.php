@@ -1,4 +1,6 @@
 <?php
+require __DIR__ . '/maintenance-check.php';
+
 $page = 'dashboard';
 $pageTitle = 'Dashboard';
 $base = '';
