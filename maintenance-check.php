@@ -15,7 +15,7 @@ const PAGE_DEVELOPMENT_STATUS = [
     'download' => true,
 ];
 
-$config = require __DIR__ . '/config.php';
+$config = require_once __DIR__ . '/downloadconfig.php';
 $currentPage = isset($page) ? $page : 'download';
 $isInDevelopment = $DEVELOPMENT_MODE_ENABLED && (PAGE_DEVELOPMENT_STATUS[$currentPage] ?? false);
 
