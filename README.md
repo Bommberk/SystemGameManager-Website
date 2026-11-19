@@ -16,7 +16,7 @@ The installation guide describes the installer distribution. Update the guide if
 
 ## Development mode
 
-The site currently displays a development page for every public page. Set `maintenance_mode` to `false` in `config.php` to make the dashboard, installation guide, changelog and download page available.
+Set `DEVELOPMENT_MODE_ENABLED` to `false` in `maintenance-check.php` to make every page available immediately. Set it to `true` to use the individual switches in `PAGE_DEVELOPMENT_STATUS`; a page set to `false` is available while pages set to `true` still show the development page.
 
 ## Structure
 

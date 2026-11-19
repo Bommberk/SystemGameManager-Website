@@ -1,7 +1,6 @@
 <?php
 
 return [
-    'maintenance_mode' => true,
     'version' => '0.8.0',
     'release_date' => 'November 12, 2026',
     'release_count' => 27,

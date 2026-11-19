@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/maintenance-check.php';
+require_once __DIR__ . '/maintenance-check.php';
 ?>
 <?php if ($config['download_url'] !== ''): ?>
     <a class="button button-primary" href="<?= escape($config['download_url']) ?>"><span aria-hidden="true">↓</span> Download for Windows</a>

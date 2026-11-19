@@ -1,7 +1,7 @@
 <?php
-require __DIR__ . '/../maintenance-check.php';
-
 $page = 'changelog';
+require_once __DIR__ . '/../maintenance-check.php';
+
 $pageTitle = 'Changelog';
 $base = '../';
 require __DIR__ . '/../header.php';
